@@ -1,6 +1,6 @@
 import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
-import { useTransaction } from '../../hooks/useTransaction'
+import { useTransactions } from '../../hooks/useTransactions'
 import { SearchForm } from './components/SearchForm'
 import {
   PriceHighlight,
@@ -9,7 +9,7 @@ import {
 } from './style'
 
 export function Transactions() {
-  const { transactions } = useTransaction()
+  const { transactions } = useTransactions()
 
   return (
     <div>

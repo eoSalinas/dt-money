@@ -9,17 +9,17 @@ interface Transaction {
   createdAt: string
 }
 
-interface TransactionContextType {
+interface TransactionsContextType {
   transactions: Transaction[]
 }
 
-interface TransactionProviderProps {
+interface TransactionsProviderProps {
   children: ReactNode
 }
 
-export const TransactionContext = createContext({} as TransactionContextType)
+export const TransactionsContext = createContext({} as TransactionsContextType)
 
-export function TransactionProvider({ children }: TransactionProviderProps) {
+export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([])
 
   async function loadTransactions() {
@@ -34,8 +34,8 @@ export function TransactionProvider({ children }: TransactionProviderProps) {
   }, [])
 
   return (
-    <TransactionContext.Provider value={{ transactions }}>
+    <TransactionsContext.Provider value={{ transactions }}>
       {children}
-    </TransactionContext.Provider>
+    </TransactionsContext.Provider>
   )
 }
