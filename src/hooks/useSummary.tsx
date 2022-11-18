@@ -19,7 +19,7 @@ export function useSummary() {
       income: 0,
       outcome: 0,
       total: 0,
-    }
+    },
   )
 
   return summary

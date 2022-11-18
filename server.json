@@ -31,14 +31,6 @@
       "type": "income",
       "createdAt": "2022-11-17T22:49:44.027Z",
       "id": 4
-    },
-    {
-      "description": "Iphone para o pai",
-      "type": "outcome",
-      "price": 10000,
-      "category": "Família",
-      "createdAt": "2022-11-18T16:40:53.720Z",
-      "id": 5
     }
   ]
 }

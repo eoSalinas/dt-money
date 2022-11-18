@@ -87,7 +87,7 @@ interface TransactionButtonTypeProps {
 }
 
 export const TransactionTypeButton = styled(
-  RadioGroup.Item
+  RadioGroup.Item,
 )<TransactionButtonTypeProps>`
   background: ${(props) => props.theme['gray-700']};
   padding: 1rem;
